@@ -2,8 +2,7 @@
 
 discord.js
 
-
-Discord server  NPM version  NPM downloads  Build status  Dependencies  Patreon
+https://discord.js.org/#/
 
 npm installnfo
 
