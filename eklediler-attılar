@@ -1,0 +1,31 @@
+//BOTU EKLEYEN SUNUCU VARSA LOG VERECEK
+client.on('guildCreate', guild => {
+  let channel = bot.channels.get("kanal id")
+  const embed = new Discord.RichEmbed()
+    .setColor("#109876")
+    .setAuthor(`eklendim, eyw.`)
+    .setThumbnail(guild.iconURL)
+    .addField("Sunucu", guild.name)
+    .addField("Kurucu", guild.owner)
+    .addField("Sunucu ID", guild.id, true)
+    .addField("Toplam Kullanıcı", guild.memberCount, true)
+    .addField("Toplam Kanal", guild.channels.size, true)
+  channel.send(embed);
+});
+//BOTU ATAN SUNUCU VARSA LOG VERECEK
+client.on('guildDelete', guild => {
+  let channel = client.channels.get("kanal id")
+  const embed = new Discord.RichEmbed()
+    .setColor("#800000")
+    .setAuthor(`atıldım, agab..`)
+    .setThumbnail(guild.iconURL)
+    .addField("Sunucu", guild.name)
+    .addField("Kurucu", guild.owner)
+    .addField("Sunucu ID", guild.id, true)
+    .addField("Toplam Kullanıcı", guild.memberCount, true)
+    .addField("Toplam Kanal", guild.channels.size, true)
+  channel.send(embed);
+});
+
+
+NOT= bot.js/app.js/index.js içine atılacak.
